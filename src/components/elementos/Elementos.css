@@ -1,3 +1,12 @@
+@font-face {
+  font-family: mobilla;
+  src: url(../src/assets/Mobilla-Regular.ttf);
+}
+
+*{
+    font-family:mobilla ;
+}
+
 .inner-container {
     width: auto;
     height: auto;
@@ -10,16 +19,18 @@
     grid-gap: 15px;
   }
   
+
   .elemento {
-    background-color: beige; /* Sets the background color to beige */
-    border-radius: 10px; /* Adds round edges */
-    padding: 10px; /* Adds some padding for spacing */
-    width: 175px; /* Sets a fixed width */
-    text-align: center; /* Centers the content horizontally */
+    background-color: beige;
+    border-radius: 10px; 
+    padding: 10px; 
+    height: 210px;
+    width: 175px; 
+    text-align: center;
   }
   
   .elemento img {
-    border-radius: 10%; /* Makes the image circular */
+    border-radius: 10%; 
     height: 110px;
     width: 100%;
   }
@@ -51,3 +62,7 @@ button:first-child {
     margin-left: 20px;
   }
 
+  .bold {
+    font-weight: bold;
+  }
+  
