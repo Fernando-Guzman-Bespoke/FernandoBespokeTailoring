@@ -1,6 +1,6 @@
 .SideBar{
     height: 39.6em;
-    width: 10em;
+    width: 15em;
     background-color: rgb(65, 65, 66);
 }
 .ImgAdminUser{
@@ -17,6 +17,7 @@
 }
 .BoxUserText{
     margin-left: 0.7em;
+    margin-top: 0.3em;
 }
 .UserText{
     font-family: Gudea;
@@ -37,7 +38,7 @@
 .TitlePedidos{
     font-family: Gudea;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-align: center;
 }
 .ModulosText{

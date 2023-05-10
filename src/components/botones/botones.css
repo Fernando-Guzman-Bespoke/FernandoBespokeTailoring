@@ -1,0 +1,23 @@
+.BotonGuardar,
+.BotonCancelar{
+    padding: 10px 20px;
+    background-color: rgb(65, 65, 66);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 11em;
+    height: 3.5em;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Gudea;
+}
+
+.BotonGuardar{
+    margin-top: 1em;
+    margin-left: 17em;
+}
+.BotonCancelar{
+    margin-top: 1em;
+    margin-left: 9em;
+}

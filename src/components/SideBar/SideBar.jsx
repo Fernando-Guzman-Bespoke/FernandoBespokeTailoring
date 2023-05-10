@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import './SideBar.css'
 import AdminUser from "../../assets/adminuser.svg";
-export default function SideBar(){
+export default function SideBar(props){
     return(
         <>
             <div className='SideBar'>  
@@ -12,7 +13,7 @@ export default function SideBar(){
                     </div>
                 </div>
                 <div className='Boxpedidos'>
-                    <div className='TitlePedidos'>MANEJO DE PEDIDOS</div>
+                    <div className='TitlePedidos'>{props.TitleSide}</div>
                     <div className='ModulosText'>Módulo 2</div>
                     <div className='ModulosText'>Módulo 3</div>
                     <div className='ModulosText'>Módulo 4</div>
