@@ -8,5 +8,44 @@
 }
 .BoxUser{
     display: flex;
-    align-items: center;
+    justify-content: center; 
+    padding-top: 1em;
+    border-bottom: 1px solid #CCCCCC;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 0.7em;
+}
+.BoxUserText{
+    margin-left: 0.7em;
+}
+.UserText{
+    font-family: Gudea;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+}
+.AdminText{
+    font-family: Gudea;
+    color: #B2B2B2;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-top: -0.4em;
+}
+.Boxpedidos{
+    margin-top: 1.5em;
+}
+.TitlePedidos{
+    font-family: Gudea;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+}
+.ModulosText{
+    font-family: Gudea;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: left;
+    color: #6D6D6D;
+    margin-top: 0.8em;
+    margin-left: 1.5em;
 }
