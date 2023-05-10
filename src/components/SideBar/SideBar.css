@@ -1,0 +1,12 @@
+.SideBar{
+    height: 39.6em;
+    width: 10em;
+    background-color: rgb(65, 65, 66);
+}
+.ImgAdminUser{
+    width: 25%;
+}
+.BoxUser{
+    display: flex;
+    align-items: center;
+}
