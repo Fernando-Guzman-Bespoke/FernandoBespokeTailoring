@@ -1,0 +1,15 @@
+
+.input1{
+    width: 15em;
+    height: 1.4em;
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    border: 1px solid rgb(215, 220, 222);
+    margin-top: 0.1em;
+}  
+.input1:focus {
+    outline: none;
+}
+  
