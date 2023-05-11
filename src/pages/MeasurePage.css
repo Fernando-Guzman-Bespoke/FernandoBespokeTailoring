@@ -1,0 +1,45 @@
+.MeasureContainer{
+    display: flex;
+}
+.RightContainer{
+    display: flex;
+    flex-direction: column;
+}
+.whiteContainer{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 70em;
+    height: 29em;
+    margin-left: 3em;
+    margin-top: 1em;
+    display: flex;
+}
+.TitleInput{
+    color: #000000;
+    font-family: Mobilla;
+    font-size: 1.3em;
+}
+.TitleInputContainer1{
+    margin-left: 5em;
+    margin-top: 1.5em;
+}
+.ContainerInputs{
+    display: flex;
+}
+.Column1{
+    display: flex;
+    flex-direction: column;
+}
+.TitleInputContainer2{
+    margin-top: 0.7em;
+    margin-left: 5em;
+}
+.TitleInputContainer3{
+    margin-top: 6.7em;
+    margin-left: 5em;
+}
+.ContainerButtons{
+    display: flex;
+}

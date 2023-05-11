@@ -1,11 +1,15 @@
 import './App.css'
 import MeasurePage from './pages/MeasurePage'
-import MuestrarioTelas from './pages/MuestrarioDisenos'
+import MuestrarioDisenos from './pages/MuestrarioDisenos'
+// import MeasurePage from './pages/MeasurePage'
+import InventoryPage from './pages/InventoryPage'
 function App() {
 
   return (
     <>
-      <MuestrarioTelas></MuestrarioTelas>
+      {/* <MeasurePage></MeasurePage> */}
+      {/* <InventoryPage></InventoryPage>*/}
+      <MuestrarioDisenos></MuestrarioDisenos>
     </>
   )
 }
