@@ -1,10 +1,12 @@
 import './App.css'
-import MeasurePage from './pages/MeasurePage'
+// import MeasurePage from './pages/MeasurePage'
+import InventoryPage from './pages/InventoryPage'
 function App() {
 
   return (
     <>
-      <MeasurePage></MeasurePage>
+      {/* <MeasurePage></MeasurePage> */}
+      <InventoryPage></InventoryPage>
     </>
   )
 }
