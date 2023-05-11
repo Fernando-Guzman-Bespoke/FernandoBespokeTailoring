@@ -16,7 +16,7 @@
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 25px;
   }
   
 
@@ -65,4 +65,15 @@ button:first-child {
   .bold {
     font-weight: bold;
   }
-  
+
+  .main-container {
+    display: flex;
+  }
+  .content-container {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  h1 {
+    color: black;
+  }

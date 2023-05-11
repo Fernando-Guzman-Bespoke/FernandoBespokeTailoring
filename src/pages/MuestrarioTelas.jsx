@@ -1,6 +1,7 @@
 import Header from '../components/header/header'
 import SideBar from '../components/SideBar/SideBar'
 import Elementos from '../components/elementos/elementos.jsx'
+import '../components/elementos/Elementos.css'
 
 export default function MuestrarioTelas(){
     return(

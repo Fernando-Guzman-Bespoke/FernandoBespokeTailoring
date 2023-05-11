@@ -67,3 +67,14 @@ button:first-child {
     font-weight: bold;
   }
   
+  .main-container {
+    display: flex;
+  }
+  .content-container {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  h1 {
+    color: black;
+  }

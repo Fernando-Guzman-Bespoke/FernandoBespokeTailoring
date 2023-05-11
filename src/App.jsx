@@ -1,11 +1,11 @@
 import './App.css'
 import MeasurePage from './pages/MeasurePage'
-import MuestrarioTelas from './pages/MuestrarioDisenos'
+import MuestrarioDisenos from './pages/MuestrarioDisenos'
 function App() {
 
   return (
     <>
-      <MuestrarioTelas></MuestrarioTelas>
+      <MuestrarioDisenos></MuestrarioDisenos>
     </>
   )
 }
