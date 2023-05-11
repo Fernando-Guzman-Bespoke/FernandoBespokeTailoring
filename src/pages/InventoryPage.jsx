@@ -22,7 +22,7 @@ export default function InventoryPage(){
                                 <ProductInventory text={'Terciopelo'} cant={'30'}></ProductInventory>
                             </div>
                             <div className='ContainerButtons2'>
-                                <Boton clase={'BotonGuardar'} text={'Guardar'}></Boton>
+                                <Boton clase={'BotonGuardar2'} text={'Guardar'}></Boton>
                                 <Boton clase={'BotonAgregarNuevaTela'} text={'Agregar Nueva Tela'}></Boton>
                             </div> 
                         </div>
