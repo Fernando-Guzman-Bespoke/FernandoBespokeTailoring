@@ -1,7 +1,10 @@
 .BotonGuardar,
 .BotonGuardar2,
 .BotonCancelar,
-.BotonAgregarNuevaTela{
+.BotonAgregarNuevaTela,
+.BotonGuardarCotizacion,
+.BotonhacerPedido,
+.BotonCancelarCotizacion{
     padding: 10px 20px;
     background-color: rgb(65, 65, 66);
     color: white;
