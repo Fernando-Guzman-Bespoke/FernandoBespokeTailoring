@@ -1,10 +1,14 @@
 import './App.css'
-import MeasurePage from './pages/MeasurePage'
-import MuestrarioDisenos from './pages/MuestrarioDisenos'
-function App() {
+// import MeasurePage from './pages/MeasurePage'
+// import InventoryPage from './pages/InventoryPage'
+import OrderHandlingPage from './pages/OrderHandlingPage'
 
+function App() {
   return (
     <>
+      {/* <MeasurePage></MeasurePage> */}
+      {/* <InventoryPage></InventoryPage> */}
+      <OrderHandlingPage></OrderHandlingPage> 
       <MuestrarioDisenos></MuestrarioDisenos>
     </>
   )
