@@ -25,14 +25,15 @@
     border-radius: 10px; 
     padding: 10px; 
     height: 210px;
-    width: 175px; 
     text-align: center;
   }
   
   .elemento img {
     border-radius: 10%; 
     height: 110px;
-    width: 100%;
+    width: 150px;
+    object-fit: cover;
+
   }
   
   .elemento p {
@@ -65,7 +66,7 @@ button:first-child {
   .bold {
     font-weight: bold;
   }
-
+  
   .main-container {
     display: flex;
   }

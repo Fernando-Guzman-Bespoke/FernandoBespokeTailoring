@@ -1,7 +1,7 @@
 import Header from '../components/header/header'
 import SideBar from '../components/SideBar/SideBar'
-import Elementos from '../components/elementos/elementos.jsx'
-import '../components/elementos/Elementos.css'
+import Disenos from '../components/disenos/disenos'
+import '../components/disenos/Disenos.css'
 
 export default function MuestrarioTelas(){
     return(
@@ -10,7 +10,7 @@ export default function MuestrarioTelas(){
             <div class="main-container">
                 <SideBar></SideBar>
                 <div class="content-container">
-                <Elementos></Elementos>
+                <Disenos></Disenos>
                 </div>
             </div>
         </>
