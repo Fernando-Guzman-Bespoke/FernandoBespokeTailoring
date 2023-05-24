@@ -15,6 +15,15 @@
     font-family: Gudea;
 }
 
+.BotonGuardar:hover,
+.BotonGuardar2:hover,
+.BotonCancelar:hover,
+.BotonAgregarNuevaTela:hover {
+  background-color: #333; /* Change the background color on hover */
+}
+
+
+
 .BotonGuardar{
     margin-top: 1em;
     margin-left: 17em;
