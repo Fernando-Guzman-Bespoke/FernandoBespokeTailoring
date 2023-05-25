@@ -1,19 +1,22 @@
 import './App.css'
-// import MeasurePage from './pages/MeasurePage'
-// import InventoryPage from './pages/InventoryPage'
-//import OrderHandlingPage from './pages/OrderHandlingPage'
+import MeasurePage from './pages/MeasurePage'
+import MuestrarioDisenos from './pages/MuestrarioDisenos'
+import InventoryPage from './pages/InventoryPage'
+import OrderHandlingPage from './pages/OrderHandlingPage'
 import AgregarTela from './pages/AgregarTela'
-//import MuestrarioTelas from './pages/MuestrarioDisenos'
+import MuestrarioTelas from './pages/MuestrarioDisenos'
+
 
 function App() {
+
   return (
     <>
-      {/* <MeasurePage></MeasurePage> */}
-      {/* <InventoryPage></InventoryPage> */}
-      {/* <OrderHandlingPage></OrderHandlingPage>  */}
+      <MuestrarioDisenos></MuestrarioDisenos>
+      <MeasurePage></MeasurePage> 
+      <InventoryPage></InventoryPage> 
+      <OrderHandlingPage></OrderHandlingPage> 
       <AgregarTela></AgregarTela>
-      {/* <MuestrarioTelas></MuestrarioTelas> */}
-
+      <MuestrarioTelas></MuestrarioTelas> 
     </>
   )
 }
