@@ -3,6 +3,10 @@ import './App.css'
 // import InventoryPage from './pages/InventoryPage'
 // import OrderHandlingPage from './pages/OrderHandlingPage'
 import PricePage from './pages/PricePage'
+//import OrderHandlingPage from './pages/OrderHandlingPage'
+// import AgregarTela from './pages/AgregarTela'
+//import MuestrarioTelas from './pages/MuestrarioDisenos'
+
 function App() {
 
   return (
@@ -11,6 +15,8 @@ function App() {
       {/* <InventoryPage></InventoryPage> */}
       {/* <OrderHandlingPage></OrderHandlingPage>  */}
       <PricePage></PricePage>
+      {/*<AgregarTela></AgregarTela>*/}
+      {/* <MuestrarioTelas></MuestrarioTelas> */}
     </>
   )
 }
