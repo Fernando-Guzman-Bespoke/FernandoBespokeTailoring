@@ -2,12 +2,9 @@
 import Header from '../components/header/header'
 import PageTitle from '../components/PageTitle/PageTitle'
 import SideBar from '../components/SideBar/SideBar'
-import lapiz from "../assets/lapiz.svg"
-import plus from "../assets/plus.svg"
-import minus from "../assets/minus.svg"
 import Input from '../components/Input/input'
 import Boton from '../components/botones/botones'
-
+import CantidadCotizacion from '../components/CantCotizacion/cantcotizacion'
 
 import './PricePage.css'
 
@@ -30,7 +27,6 @@ export default function PricePage(){
                                             <div className='text'>Traje Completo</div>
                                             <div className='subtext'>Caballero</div>
                                         </div>
-                                        <img className='imgLapiz' src={lapiz}></img>
                                     </div>
                                 </div>
 
@@ -39,7 +35,6 @@ export default function PricePage(){
                                     <div className='BoxContainer'>
                                         <div className='Onlytext'>Dracón</div>
                                         <div className='textCant'> 5 yd<sup>2</sup></div>
-                                        <img className='imgLapiz' src={lapiz}></img>
                                     </div>
                                 </div>
 
@@ -50,17 +45,12 @@ export default function PricePage(){
                                     <p className='TextTitle'>Cliente</p>
                                     <div className='BoxContainer'>
                                         <div className='Onlytext'>Enrique Gonzáles</div>
-                                        <img className='imgLapiz' src={lapiz}></img>
                                     </div>
                                 </div>
-
+                                
                                 <div className='TextBoxContainer-right'>
-                                    <p className='TextTitle'>Cantidad</p>
-                                    <div className='BoxContainerNums'>
-                                        <img className='imgPLus' src={minus}></img>
-                                        <div className='num'>1</div>
-                                        <img className='imgMinus' src={plus}></img>
-                                    </div>
+                                    <CantidadCotizacion></CantidadCotizacion>
+                                    
                                 </div>
 
                             </div>

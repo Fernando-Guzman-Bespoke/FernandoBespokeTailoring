@@ -34,3 +34,13 @@
     margin-top: 1em;
     /* margin-left: 17em; */
 }
+
+.BotonGuardar:hover,
+.BotonGuardar2:hover,
+.BotonCancelar:hover,
+.BotonAgregarNuevaTela:hover,
+.BotonGuardarCotizacion:hover,
+.BotonhacerPedido:hover,
+.BotonCancelarCotizacion:hover{
+    background-color: rgb(40, 40, 40);
+}
