@@ -4,6 +4,7 @@ import './App.css'
 //import OrderHandlingPage from './pages/OrderHandlingPage'
 import AgregarTela from './pages/AgregarTela'
 //import MuestrarioTelas from './pages/MuestrarioDisenos'
+import Login from './pages/Login'
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       {/* <MeasurePage></MeasurePage> */}
       {/* <InventoryPage></InventoryPage> */}
       {/* <OrderHandlingPage></OrderHandlingPage>  */}
-      <AgregarTela></AgregarTela>
+      {/* <AgregarTela></AgregarTela> */}
       {/* <MuestrarioTelas></MuestrarioTelas> */}
+      <Login></Login>
 
     </>
   )
