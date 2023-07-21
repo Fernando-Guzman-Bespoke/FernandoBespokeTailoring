@@ -1,7 +1,10 @@
 .BotonGuardar,
 .BotonGuardar2,
 .BotonCancelar,
-.BotonAgregarNuevaTela{
+.BotonAgregarNuevaTela,
+.BotonGuardarCotizacion,
+.BotonhacerPedido,
+.BotonCancelarCotizacion{
     padding: 10px 20px;
     background-color: rgb(65, 65, 66);
     color: white;
@@ -39,4 +42,14 @@
 .BotonGuardar2{
     margin-top: 1em;
     /* margin-left: 17em; */
+}
+
+.BotonGuardar:hover,
+.BotonGuardar2:hover,
+.BotonCancelar:hover,
+.BotonAgregarNuevaTela:hover,
+.BotonGuardarCotizacion:hover,
+.BotonhacerPedido:hover,
+.BotonCancelarCotizacion:hover{
+    background-color: rgb(40, 40, 40);
 }
