@@ -1,5 +1,5 @@
 import './App.css'
-// import MeasurePage from './pages/MeasurePage'
+import MeasurePage from './pages/MeasurePage'
 // import InventoryPage from './pages/InventoryPage'
 // import OrderHandlingPage from './pages/OrderHandlingPage'
 //import PricePage from './pages/PricePage'
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      {/* <MeasurePage></MeasurePage> */}
+      <MeasurePage></MeasurePage>
       {/* <InventoryPage></InventoryPage> */}
       {/* <OrderHandlingPage></OrderHandlingPage>  */}
       {/* <AgregarTela></AgregarTela> */}
       {/* <MuestrarioTelas></MuestrarioTelas> */}
-      <Login></Login>
+      {/* <Login></Login> */}
        {/*<PricePage></PricePage>}
       {/*<AgregarTela></AgregarTela>*/}
       {/* <MuestrarioTelas></MuestrarioTelas> */}

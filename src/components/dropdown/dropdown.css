@@ -1,0 +1,29 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown__button {
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease; 
+  }
+ 
+  .dropdown__item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown__item:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown.active .dropdown__list {
+    display: block;
+  }
+  
