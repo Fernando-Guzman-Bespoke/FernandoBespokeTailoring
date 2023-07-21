@@ -1,11 +1,21 @@
+import { useHistory } from 'react-router-dom'
 import Header from '../components/header/header'
 import PageTitle from '../components/PageTitle/PageTitle'
 import SideBar from '../components/SideBar/SideBar'
 import Input from '../components/Input/input'
 import Boton from '../components/botones/botones'
-
 import './MeasurePage.css'
+
+
+
 export default function MeasurePage(){
+    const history = useHistory();
+
+    const handleClick = () => {
+        console.log("click")
+        history.push('/muestrario');
+    };
+    
     return(
         <>
             <Header></Header>
@@ -55,8 +65,8 @@ export default function MeasurePage(){
                                     </div>
                                 </div>
                             </div>
-                            <div className='ContainerButtons'>
-                                <Boton clase={'BotonGuardar'} text={'Guardar'}></Boton>
+                            <div className='ContainerButtons' onClick={handleClick}>
+                                <Boton clase={'BotonGuardar'} text={'Guardar'} ></Boton>
                                 <Boton clase={'BotonCancelar'} text={'Cancelar'}></Boton>
                             </div> 
                         </div>                                            
