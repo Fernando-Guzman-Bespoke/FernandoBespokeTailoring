@@ -6,21 +6,23 @@ import MeasurePage from './pages/MeasurePage'
 //import OrderHandlingPage from './pages/OrderHandlingPage'
 // import AgregarTela from './pages/AgregarTela'
 //import MuestrarioTelas from './pages/MuestrarioDisenos'
+import IngresoSaco from './pages/IngresoSaco'
 import Login from './pages/Login'
 
 function App() {
 
   return (
     <>
-      <MeasurePage></MeasurePage>
+       {/* <MeasurePage></MeasurePage>  */}
       {/* <InventoryPage></InventoryPage> */}
       {/* <OrderHandlingPage></OrderHandlingPage>  */}
       {/* <AgregarTela></AgregarTela> */}
       {/* <MuestrarioTelas></MuestrarioTelas> */}
-      {/* <Login></Login> */}
+      <Login></Login>
        {/*<PricePage></PricePage>}
       {/*<AgregarTela></AgregarTela>*/}
       {/* <MuestrarioTelas></MuestrarioTelas> */}
+      {/* <IngresoSaco></IngresoSaco> */}
     </>
   )
 }
