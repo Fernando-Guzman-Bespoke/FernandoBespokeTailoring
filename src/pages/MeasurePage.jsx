@@ -32,7 +32,7 @@ export default function MeasurePage(){
                                 </div>
                                 <div className='InternContainer'>
                                     <div className='TitleInputContainer'>Fecha</div>
-                                    <input type='date' className='input-date'></input>
+                                    <input type='date' className='x'></input>
                                 </div>
                                 <div className='InternContainer'>
                                     <div className='TitleInputContainer'>Fecha de entrega</div>
