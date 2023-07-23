@@ -4,7 +4,9 @@
   }
   
   .dropdown__button {
+    background-color: #ffff;
     padding: 8px 16px;
+    color: black;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
