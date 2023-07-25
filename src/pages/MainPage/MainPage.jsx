@@ -9,7 +9,7 @@ function MainPage() {
   let page;
   console.log(token)
   if (token === null) page = <Login />;
-  // else if (token) page = <LoggedPage token={token} />;
+  else if (token) page = <LoggedPage token={token} />;
   console.log(page)
   return (
     page

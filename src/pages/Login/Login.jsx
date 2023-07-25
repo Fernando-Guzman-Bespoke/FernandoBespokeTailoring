@@ -7,7 +7,6 @@ import Spinner from '@components/Spinner';
 import Logo from '@components/Logo';
 
 function Login() {
-  console.log('login')
   const [form, setForm] = useState({});
   const [formError, setFormError] = useState({});
 
