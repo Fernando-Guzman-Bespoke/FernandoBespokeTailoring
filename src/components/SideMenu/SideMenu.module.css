@@ -1,0 +1,97 @@
+.sideMenu{
+  width: 300px;
+  height: auto;
+  max-height: calc(100vh - 80px - var(--navBar-height--));
+  box-shadow: var(--element-box-shadow--);
+  background-color: var(--element-background-color--);
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: auto  ;
+  padding: 40px;
+  display: grid;
+  justify-content: flex-start;
+  gap: 20px;
+  position: sticky;
+  top: calc(var(--navBar-height--) + 20px);
+  box-sizing: border-box;
+}
+
+.sideMenu hr{
+  width: 100%;
+  height: fit-content;
+}
+
+.menuHeader{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  width: fit-content;
+  column-gap: 20px;
+  height: fit-content;
+  align-items: center;
+
+}
+
+.menuHeader img{
+  width: 70px;
+  aspect-ratio: 1/1;
+}
+
+.userData{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.userName{
+  font-size: 25px;
+  align-self: self-end;
+  word-break: break-word;
+  hyphens: auto;
+  color: black;
+}
+
+.userPosition{
+  font-size: 15px;
+  color: gray;
+  align-self: self-start;
+}
+
+ul.itemsList{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 25px;
+}
+
+.logout{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color:gray;
+  align-self: flex-end;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.logout img{
+  height: 80%;
+
+}
+
+
+.logout:hover{
+  font-weight: bold;
+}
+
+@media only screen and (min-height: 800px) {
+  .sideMenu{
+    height: fit-content;
+  }
+}

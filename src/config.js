@@ -1,4 +1,4 @@
 const appName = 'Fernando Bespoke Tiloring';
-const serverHost = 'http://127.0.0.1:2000';
+const serverHost = 'http://localhost:8082';
 
 export { appName, serverHost };

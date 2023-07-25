@@ -1,6 +1,7 @@
 *{
-    --app-blue--:#1c2532;
-    --app-background-color--:#F4F4F7;
+    --app-blue--:#18202d;
+    /* --app-background-color--:#b38365; */
+    --app-background-color--:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,135,99,1) 35%, rgba(113,77,59,1) 100%);;
     --logo-title-font--: monospace;
     --app-plain-text-font--: helvetica;
     --error-color--:#df0303;

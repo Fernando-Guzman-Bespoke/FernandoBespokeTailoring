@@ -13,12 +13,12 @@ function useLogin() {
     setError(null);
     setLoading(true);
 
-    const uri = `${serverHost}/user/login`;
+    const uri = `${serverHost}/api/auth/signin`;
 
     try {
       const reply = await fetch(uri, {
         method: 'POST',
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ username: email, password }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -26,8 +26,9 @@ function useLogin() {
 
       if (reply.ok !== true) throw reply;
       const res = await reply.json();
+      console.log(res)
       const { token } = res;
-
+      console.log(token)
       localStorage.setItem('token', token);
       setToken(token);
       setSuccess(true);
