@@ -1,22 +1,18 @@
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import './App.css'
-import MeasurePage from './pages/MeasurePage'
-// import InventoryPage from './pages/InventoryPage'
-// import OrderHandlingPage from './pages/OrderHandlingPage'
-//import PricePage from './pages/PricePage'
-//import OrderHandlingPage from './pages/OrderHandlingPage'
-// import AgregarTela from './pages/AgregarTela'
-import MuestrarioTelas from './pages/MuestrarioDisenos'
+import { SessionProvider } from '@context/SessionContext';
+import MainPage from '@pages/MainPage';
 
 function App() {
-
   return (
-    <Router>
-      <Route path="/muestrario" component={MuestrarioTelas} />
-      <Route path="/medidas" component={MeasurePage} />
-      <Redirect from="/" to="/medidas" />
-    </Router>
+    <div className="app">
+      <Router>
+        <SessionProvider>
+          <MainPage />
+        </SessionProvider>
+      </Router>
+    </div>
   );
 }
 
-export default App
+export default App;
