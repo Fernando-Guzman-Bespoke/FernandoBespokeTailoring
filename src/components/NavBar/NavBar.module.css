@@ -1,0 +1,55 @@
+.navBar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: var( --navBar-height--);
+background-color: var(--app-blue--);
+overflow: hidden;
+padding: 10px 25px;
+box-sizing: border-box;
+position: sticky;
+top: 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img{
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.logo span{
+  color: white;
+  font-size: 18px;
+}
+
+.menu {
+  height: 100% ;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu li{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu li:hover{
+  color:rgb(195, 195, 195);
+}
+
+.menu a{
+  color: inherit;
+  font-weight: inherit;
+}

@@ -1,0 +1,12 @@
+.logo{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo span{
+  font-family:var(--logo-title-font--);
+  font-weight: bold;
+  text-align: center;
+}

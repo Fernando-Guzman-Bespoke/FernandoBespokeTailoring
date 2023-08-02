@@ -1,0 +1,42 @@
+.button{
+    border-radius: 8px;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    font-family: helvetica;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.button.aqua:active{
+    background-color: #443125;
+    opacity: 1;
+}
+
+.button.aqua{
+    background-color: #805d48;
+    color: white;
+    font-weight: bold;
+}
+
+.button.aqua:hover{
+    opacity: 0.8;
+}
+
+.button.blue{
+    background-color: var(--app-blue--);
+    color: white;
+    font-weight: bold;
+}
+
+.button.blue:active{
+    background-color: #425775;
+}
+
+.button.blue:hover{
+    opacity: 0.7;
+}

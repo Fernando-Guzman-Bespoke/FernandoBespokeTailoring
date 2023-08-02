@@ -1,0 +1,41 @@
+*{
+    --app-blue--:#18202d;
+    /* --app-background-color--:#b38365; */
+    --app-background-color--:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,135,99,1) 35%, rgba(113,77,59,1) 100%);;
+    --logo-title-font--: monospace;
+    --app-plain-text-font--: helvetica;
+    --error-color--:#df0303;
+    --app-main-color--:#30b19a;
+    --navBar-height--:50px;
+    --element-background-color--: #FDFDFD;
+    --element-box-shadow--: 0 0 5px 0.1px #00000022;
+    --app-text-size--:16px;
+    --app-h1-size--:30px;
+    --content-gap--:40px;
+  
+  }
+  
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: var(--app-plain-text-font--);
+  }
+  
+  .app{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: var(--navBar-height--) 1fr;
+    position: relative;
+  }
+  
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }

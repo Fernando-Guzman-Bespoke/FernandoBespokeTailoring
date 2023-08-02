@@ -1,0 +1,7 @@
+.page{
+    display: grid;
+    grid-template-columns: min-content 3fr;
+    padding: var(--content-gap--);
+    background-color: var(--app-background-color--);
+    gap:var(--content-gap--);
+  }
