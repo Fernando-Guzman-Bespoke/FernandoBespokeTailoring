@@ -21,7 +21,7 @@ function UsersDataTable({ search }) {
 
   return (
     <DataTable
-      titles={['No.', 'Usuario', 'Cui/Pasaporte', 'Tipo']}
+      titles={['No.', 'Cliente', 'Fecha de Pedido', 'Fecha de Entrega', 'Total']}
       isLoading={loading}
       error={error || !(result?.length > 0)}
     >
