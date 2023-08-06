@@ -1,0 +1,12 @@
+.Radio-Container{
+    margin-top: 4%;
+    display: flex;
+    color: black;
+}
+.TitleRadio{
+    color: black;
+    font-size: 1.5em;
+}
+.radioRight{
+    margin-left: 25%;
+}

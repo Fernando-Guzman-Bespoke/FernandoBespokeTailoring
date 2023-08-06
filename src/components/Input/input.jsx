@@ -7,8 +7,11 @@ export default function Input(props){
         setInputValue(e.target.value);
     };
     return (
-        <div className='input-container'>
-            <input className={props.clase} type="text" value={inputValue} onChange={handleChange} placeholder={props.value}/>
-        </div>
+        <>
+            <div className='input-container'>
+                <div className='TitleInp'>{props.title}</div>
+                <input type="text" value={inputValue} onChange={handleChange} placeholder={props.value}/>
+            </div>     
+        </>            
     );
 }

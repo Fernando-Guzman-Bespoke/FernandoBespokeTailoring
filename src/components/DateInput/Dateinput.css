@@ -1,0 +1,6 @@
+.date-input-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 27%;
+    min-width: 25%;
+}

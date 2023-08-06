@@ -5,7 +5,10 @@ import AdminSideMenu from '@components/AdminSideMenu';
 import styles from './AdminLoggedPage.module.css';
 import { Route, Routes } from 'react-router-dom';
 import UsersListPage from '@pages/usersListPage';
-
+import IngresoPedido from '../IngresoPedidos';
+import MedidasSaco from '../IngresoMedidasSaco/MedidasSaco';
+import MedidasChaleco from '../MedidasChaleco/MedidasChalecho';
+import MedidasPantalon from '../MedidasPantalon/MedidasPantalon';
 
 function AdminLoggedPage({
   showNavBar, name, lastName, sex,
@@ -17,6 +20,12 @@ function AdminLoggedPage({
         <AdminSideMenu name={`${name} ${lastName}`} sex={sex} />
         <Routes>
           <Route path="/usuarios" element={<UsersListPage />} />
+          <Route path="/IngresoPedido" element={<IngresoPedido/>}/>
+          <Route path="/MedidasSaco" element={<MedidasSaco/>}/>
+          <Route path="/MedidasChaleco" element={<MedidasChaleco/>}/>
+          <Route path="/MedidasPantalon" element={<MedidasPantalon/>}/>
+
+
         </Routes>
       </div>
     </>

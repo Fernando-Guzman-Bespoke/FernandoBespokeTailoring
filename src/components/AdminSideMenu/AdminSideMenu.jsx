@@ -13,8 +13,12 @@ function AdminSideMenu({ name, sex }) {
   return (
     <SideMenu name={name} position="Admin" sex={sex}>
       <SideMenuItem image={ordersListIcon} title="Listado de Pedidos" path="usuarios" />
-      {/* <SideMenuItem image={medicalCentersListIcon} title="Centros médicos" path="centroMedico" />
-      <SideMenuItem image={suppliesListIcon} title="Lista de suministros" path="suministros" />
+       <SideMenuItem image={ordersListIcon} title="Ingreso de Pedidos" path="IngresoPedido" />
+       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Saco" path="MedidasSaco" />
+       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Chaleco" path="MedidasChaleco" />
+       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Pantalón" path="MedidasPantalon" />
+
+      {/*<SideMenuItem image={suppliesListIcon} title="Lista de suministros" path="suministros" />
       <SideMenuItem image={reportsIcon} title="Reportes" path="reportes" />
       <SideMenuItem image={noStock} title="Suministros por agotar" path="/suministros/porTerminarse" />
       <SideMenuItem image={TestTypeIcon} title="Lista de tipos de examen" path="tiposExamen" /> */}
