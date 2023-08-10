@@ -1,0 +1,10 @@
+.TitleInp{
+    color: black;
+    font-size: 1.5em;
+}
+.textArea-container{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}

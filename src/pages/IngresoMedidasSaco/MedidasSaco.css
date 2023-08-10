@@ -1,0 +1,14 @@
+.horizontal2{
+    display: flex;
+    gap: 10%;
+}
+.horizontal3{
+    display: flex;
+    gap: 12%;
+    margin-top: 1%;
+}
+.horizontal4{
+    display: flex;
+    gap: 9.3%;
+    margin-top: 1%;
+}

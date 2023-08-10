@@ -1,26 +1,23 @@
 
-.input1{
-    width: 15em;
-    height: 1.4em;
-    border-radius: 10px;
-    background-color: white;
-    color: gray;
-    padding: 10px;
-    border: 1px solid rgb(215, 220, 222);
-    margin-top: 0.1em;
+.input-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 27%;
+    min-width: 22%;
 }  
-.input1:focus, 
-.input2:focus
-{
+.input-container:focus{
     outline: none;
 }
-.input2{
-    width: 16em;
-    height: 2em;
-    border-radius: 10px;
-    background-color: white;
-    color: gray;
-    padding: 10px;
-    border: 1px solid rgb(215, 220, 222);
-    margin-top: -0.7em;
-}  
+input{
+    padding-right: 2em;
+    background-size: 16px 16px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    color: #75757E;
+    border: 1px solid #D2D7D9; 
+    border-radius: 5px; 
+    display: inline-block;
+    white-space: pre-wrap; 
+    max-width: 100%;
+}

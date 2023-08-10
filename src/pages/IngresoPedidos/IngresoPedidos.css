@@ -1,0 +1,37 @@
+.WhiteContainer{
+    background-color: #ffffff;
+    margin-top: 2%;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    border-radius: 15px;
+    padding-right: 5% ;
+    height: 28.7em;
+    overflow-y: auto;
+    padding-bottom: 2%;
+}
+.horizontal{
+    display: flex;
+    justify-content: space-between; 
+}
+.horizontal-top{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 3%;
+}
+.horizontal-top2{
+    display: flex;
+    gap : 4%;
+    margin-top: 3%;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center; 
+    margin-top: 3%;
+}
+.UnderTitle{
+    text-decoration: underline;
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+}

@@ -1,0 +1,30 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    max-width: 27%;
+    min-width: 17%;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url('../../assets/arrowdropdown.svg');
+    background-position: right 7px center;
+    background-repeat: no-repeat;
+    padding-right: 2em;
+    background-size: 16px 16px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    color: #75757E;
+    border: 1px solid #D2D7D9; 
+    border-radius: 5px; 
+    display: inline-block;
+    white-space: pre-wrap; 
+    max-width: 100%;
+}
+.TitleInp{
+    color: black;
+    font-size: 1.5em;
+}
