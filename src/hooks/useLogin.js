@@ -13,12 +13,12 @@ function useLogin() {
     setError(null);
     setLoading(true);
 
-    const uri = `${serverHost}/api/auth/signin`;
+    const uri = `${serverHost}/user/login`;
 
     try {
       const reply = await fetch(uri, {
         method: 'POST',
-        body: JSON.stringify({ username: email, password }),
+        body: JSON.stringify({  email, password }),
         headers: {
           'Content-Type': 'application/json',
         },
