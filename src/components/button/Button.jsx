@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import './Button.css'
 
-export default function Button(props){ 
+export default function Button({ text, onClick }) { 
     return (
         <>
-            <div className='button'>
-                {props.text}
+            <div className='button' onClick={onClick}>
+                {text}
             </div>     
         </>            
     );

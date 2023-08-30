@@ -9,7 +9,7 @@ export default function DateInput(props){
     return (
         <>
             <div className='date-input-container'>
-                <div className='TitleInp'>{props.title}</div>
+                <div className='Title'>{props.title}</div>
                 <input  type="date" value={inputValue} onChange={handleChange} placeholder={props.value}
             />
             </div>     

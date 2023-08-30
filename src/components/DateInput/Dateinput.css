@@ -3,4 +3,9 @@
     flex-direction: column;
     max-width: 27%;
     min-width: 25%;
+    background-color: white;
+}
+
+input {
+    background-color: white;
 }

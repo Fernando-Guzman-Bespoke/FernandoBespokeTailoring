@@ -1,0 +1,29 @@
+/* Estilos de base para el contenedor del checkbox */
+.Checkbox-Container {
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.TitleCheckbox {
+    /* Estilos para el título del componente */
+    /* font-weight: bold; */
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.Checkbox-Container {
+    /* Estilos para el contenedor del checkbox */
+    display: flex;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    /* Estilos base para el checkbox */
+    margin-right: 5px;
+}

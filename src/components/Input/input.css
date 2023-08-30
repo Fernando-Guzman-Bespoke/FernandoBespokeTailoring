@@ -2,7 +2,7 @@
 .input-container{
     display: flex;
     flex-direction: column;
-    max-width: 27%;
+    max-width: 85%;
     min-width: 22%;
 }  
 .input-container:focus{
@@ -20,4 +20,8 @@ input{
     display: inline-block;
     white-space: pre-wrap; 
     max-width: 100%;
+}
+
+.Title{
+    font-size: 1.2em;
 }

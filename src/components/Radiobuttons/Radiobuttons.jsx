@@ -14,7 +14,7 @@ export default function RadioButtons(props) {
         <div className='TitleRadio'>{props.title}</div>
         <div className='Radio-Container'>
             <label>
-            <input
+            <input className='radio'
                 type="radio"
                 value={props.option1Value}
                 checked={selectedOption === props.option1Value}

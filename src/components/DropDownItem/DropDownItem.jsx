@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 import "./DropDownItem.css";
 
-function DropDownItem(props){
-    const { options } = props;
-    const [selectedOption, setSelectedOption] = useState("");
-
-    const handleChange = (event) => {
-        setSelectedOption(event.target.value);
-      };
-    
-    return(
+function DropDownItem({ options, title, selecttitle, selectedValue, onValueChange }) {   
+    return (
         <>
         <div className="dropdown">
-            <div className='TitleInp'>{props.title}</div>
-            <select value={selectedOption} onChange={handleChange}>
-                <option value="">{props.selecttitle}</option>
+            <div className='Title'>{title}</div>
+            <select value={selectedValue} onChange={(e) => onValueChange(e.target.value)}>
+                <option value="">{selecttitle}</option>
                 {options.map((option) => (
                 <option key={option} value={option}>
                     {option}
@@ -25,5 +18,6 @@ function DropDownItem(props){
         </>
     );
 }
+
 
 export default DropDownItem;

@@ -9,7 +9,7 @@ export default function Input(props){
     return (
         <>
             <div className='input-container'>
-                <div className='TitleInp'>{props.title}</div>
+                <div className='Title'>{props.title}</div>
                 <input type="text" value={inputValue} onChange={handleChange} placeholder={props.value}/>
             </div>     
         </>            

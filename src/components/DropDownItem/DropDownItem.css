@@ -1,14 +1,17 @@
 .dropdown{
     display: flex;
     flex-direction: column;
-    max-width: 27%;
-    min-width: 17%;
+    max-width: 85%;
+    min-width: 11%;
+    max-height: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
 }
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
+    background-color: white;
     background-image: url('../../assets/arrowdropdown.svg');
     background-position: right 7px center;
     background-repeat: no-repeat;
@@ -24,7 +27,7 @@ select {
     white-space: pre-wrap; 
     max-width: 100%;
 }
-.TitleInp{
+.Title{
     color: black;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
