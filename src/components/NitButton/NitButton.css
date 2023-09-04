@@ -1,0 +1,23 @@
+.Nitbutton{
+    height: fit-content;
+    
+    background-color: #414142;
+    color: white;
+    border-radius: 10px;
+    padding-top: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
+    cursor: pointer;  
+    margin-left: 3.6em;
+     
+    margin-top: 1.8em;
+}
+
+.Nitbutton:hover{
+    background-color: #292929;
+}
+.plusClass{
+    width: 1.7em;
+    filter: brightness(0) invert(1);
+}
