@@ -16,6 +16,8 @@ function Facturacion(){
     }
     const Pedido = [
         ['Traje Completo', 1, 4000, 4000],
+        ['Corbata lisa', 2, 300, 600],
+        ['Traje Completo', 1, 4000, 4000],
         ['Corbata lisa', 2, 300, 600]
     ]
     return(
@@ -49,4 +51,4 @@ function Facturacion(){
     )
 }
 
-export default Facturacion;
+export default Facturacion
