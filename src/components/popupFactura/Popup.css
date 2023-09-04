@@ -1,0 +1,44 @@
+.popup-content{
+    position: fixed;
+    top: 13em;
+    left: 43em;
+    width: 25em;
+    height: 25em;
+    background: #D2D7D9;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    border-radius: 2%;
+    padding-left: 2em;
+    padding-right: 2em;
+    gap: 1em;
+}
+
+.horizontalNit{
+    display: flex;
+    gap: 8em;
+    margin-top: 2em;
+    height: fit-content; 
+}
+.horizontalNit2{
+    display: flex;
+    height: fit-content; 
+    gap: 2em;
+}
+.NitButtonContainer{
+    width: 11em;
+    margin-left: 7em;
+    margin-top: 2em;
+}
+.CloseButton{
+    height: fit-content;    
+    background-color: #414142;
+    color: white;
+    border-radius: 10px;
+    padding-top: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
+    cursor: pointer;  
+    margin-left: 3.6em;
+}

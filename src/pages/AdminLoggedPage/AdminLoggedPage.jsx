@@ -9,7 +9,7 @@ import IngresoPedido from '../IngresoPedidos';
 import MedidasSaco from '../IngresoMedidasSaco/MedidasSaco';
 import MedidasChaleco from '../MedidasChaleco/MedidasChalecho';
 import MedidasPantalon from '../MedidasPantalon/MedidasPantalon';
-
+import Facturacion from '../facturacion/facturacion';
 function AdminLoggedPage({
   showNavBar, name, lastName, sex,
 }) {
@@ -24,7 +24,7 @@ function AdminLoggedPage({
           <Route path="/MedidasSaco" element={<MedidasSaco/>}/>
           <Route path="/MedidasChaleco" element={<MedidasChaleco/>}/>
           <Route path="/MedidasPantalon" element={<MedidasPantalon/>}/>
-
+          <Route path="/Facturacion" element={<Facturacion/>} />
 
         </Routes>
       </div>

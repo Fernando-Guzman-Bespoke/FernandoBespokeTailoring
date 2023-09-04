@@ -1,0 +1,14 @@
+.Vertical1{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2em;
+}
+.Vertical2{
+    width: 60%;
+}
+.NitContainer{
+    display: flex;
+    width: 100%;
+}
