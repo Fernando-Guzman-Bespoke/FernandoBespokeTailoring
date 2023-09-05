@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 // import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router';
 import DropDownItem from '../../components/DropDownItem/DropDownItem';
@@ -17,9 +17,10 @@ function IngresoPedido() {
     const opciones =['Opcion1','Opcion2','Opcion3','Opcion4'];
     const opciones2 =[0,1,2,3,4];
     const [showInput, setShowInput] = useState(false);
-    const { callFetch } = useFetch();
+    const { callFetch, result, loading } = useFetch();
     // const navigate = useNavigate();
     const [cliente, setCliente] = useState(0);
+    const [clients, setClients] = useState([]);
     const [fechaPedido, setFechaPedido] = useState(new Date());
     const [fechaEntrega, setFechaEntrega] = useState(new Date());
     const [telaCuerpo, setTelaCuerpo] = useState(0);
@@ -102,9 +103,42 @@ function IngresoPedido() {
         }catch (ex) {
             setError(ex.status === 400 ? 'Datos incorrectos.' : 'Error de conexión.');
         }
-        // navigate("/ruta_tras_guardar");
     }
 
+    // useEffect(() => {
+    //     let uri = `${serverHost}/user/clientList`;
+    //     async function fetchClients() {
+    //         await callFetch({ uri, headers: { 'Content-Type': 'application/json' } });
+    //         console.log(result); // Accede al estado `result` directamente
+    //         if (result && result.result) {
+    //             setClients(result.result); // si tu respuesta del servidor tiene una propiedad `result`
+    //         } else if (result) {
+    //             setClients(result); // si tu respuesta del servidor es un array directamente
+    //         }
+    //     }
+    //     fetchClients();
+    // }, []);
+    useEffect(() => {
+        let uri = `${serverHost}/user/clientList`;
+        async function fetchClients() {
+            await callFetch({ uri, headers: { 'Content-Type': 'application/json' } });
+        }
+        fetchClients();
+        console.log(result);
+        if (result && result.result) {
+            setClients(result.result); 
+        } else if (result) {
+            setClients(result); 
+        }
+    }, []);
+    
+    
+    const transformedClients = clients
+  .filter(client => client.id_cliente && client.nombre) 
+  .map(client => ({
+    label: client.nombre,
+    value: client.id_cliente
+  }));
 
     return(
         <>  
@@ -113,7 +147,7 @@ function IngresoPedido() {
             <div className='WhiteContainer'>    
             <div className='UnderTitle'>1. Datos Generales</div>            
                 <div className='horizontal'>
-                    <DropDownItem options={opciones2} selecttitle={'Seleccione el nombre del cliente'} title={'Cliente'} selectedValue={cliente} onValueChange={setCliente}/>
+                    <DropDownItem options={transformedClients} selecttitle={'Seleccione el nombre del cliente'} title={'Cliente'} selectedValue={cliente} onValueChange={setCliente}/>
                     <DateInput title={'Fecha'} value={'Fecha de pedido'}/>
                     <DateInput title={'Fecha de Entrega'}/>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./DropDownItem.css";
 
 function DropDownItem({ options, title, selecttitle, selectedValue, onValueChange }) {   
@@ -9,8 +9,8 @@ function DropDownItem({ options, title, selecttitle, selectedValue, onValueChang
             <select value={selectedValue} onChange={(e) => onValueChange(e.target.value)}>
                 <option value="">{selecttitle}</option>
                 {options.map((option) => (
-                <option key={option} value={option}>
-                    {option}
+                <option key={option.value} value={option.value}>
+                    {option.label}
                 </option>
                 ))}
             </select>
