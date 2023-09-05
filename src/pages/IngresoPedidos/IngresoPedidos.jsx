@@ -19,7 +19,7 @@ function IngresoPedido() {
     const [showInput, setShowInput] = useState(false);
     const { callFetch } = useFetch();
     // const navigate = useNavigate();
-    const [cliente, setCliente] = useState("");
+    const [cliente, setCliente] = useState(0);
     const [fechaPedido, setFechaPedido] = useState(new Date());
     const [fechaEntrega, setFechaEntrega] = useState(new Date());
     const [telaCuerpo, setTelaCuerpo] = useState(0);
@@ -37,7 +37,7 @@ function IngresoPedido() {
     const [bolsa, setBolsa] = useState(false);
     const [costura, setCostura] = useState(false);
     const [combinación, setCombinación] = useState(false);
-    const [iniciales, setIniciales] = useState(false);
+    const [iniciales, setIniciales] = useState("");
     const [plaquet, setPlaquet] = useState(false);
     const [cuello, setCuello] = useState(false);
     const [collarInterno, setCollarInterno] = useState(false);
@@ -56,13 +56,12 @@ function IngresoPedido() {
 
 
     const handleSave = async () => {
-        console.log('ENTERED1')
         const payload = {
-            id_cliente: cliente,
+            cliente_id: cliente,
             fecha: fechaPedido,
             fecha_entrega: fechaEntrega,
-            id_tela_cuerpo: telaCuerpo,
-            id_hilo_cuerpo: hiloCuerpo,
+            tela_cuerpo_id: telaCuerpo,
+            hilo_cuerpo_id: hiloCuerpo,
             boton_cuerpo_id: botonCuerpo ? 1 : 0, 
             etiqueta_cuerpo_id: etiqueta,
             tela_combinacion_id: telaCombinación,
@@ -92,7 +91,6 @@ function IngresoPedido() {
             notas: notas,
         };
         try {
-            console.log('ENTERED')
             await callFetch({
                 uri:  `${serverHost}/order/createPedido`, 
                 method: 'POST',
@@ -139,7 +137,8 @@ function IngresoPedido() {
                             <DropDownItem options={opciones2} selecttitle={'Seleccione la entretela'} title={'Entretela'} selectedValue={entretela} onValueChange={setEntretela}/>
                             <CheckBox 
                                 title={'Iniciales'}
-                                onChange={(e) => setShowInput(e.target.checked)} // Añade esta línea
+                                isChecked={showInput}
+                                onCheckedChange={(checked) => setShowInput(checked)}
                             />
                             {showInput && <Input value={'Ingrese las iniciales'} title={'Iniciales'}/>}
                             {/* <Input value={'Ingrese las iniciales'} title={'Iniciales'}/> */}
@@ -158,7 +157,7 @@ function IngresoPedido() {
                         <CheckBox title={'Bolsa'} isChecked={bolsa} onCheckedChange={setBolsa}/>
                         <CheckBox title={'Costura p/Pluma'} isChecked={costura} onCheckedChange={setCostura}/>
                         <CheckBox title={'Combinación'} isChecked={combinación} onCheckedChange={setCombinación}/>
-                        <CheckBox title={'Iniciales'} isChecked={iniciales} onCheckedChange={setIniciales}/>
+                        {/* <CheckBox title={'Iniciales'} isChecked={iniciales} onCheckedChange={setIniciales}/> */}
                         <CheckBox title={'Plaquet'} isChecked={plaquet} onCheckedChange={setPlaquet}/>
                         <CheckBox title={'Cuello'} isChecked={cuello} onCheckedChange={setCuello} />
                         <CheckBox title={'Collar interno'} isChecked={collarInterno} onCheckedChange={setCollarInterno}/>
@@ -177,7 +176,7 @@ function IngresoPedido() {
                     </div>
                     <div className="dropdown-column">
                         <div>
-                            <DropDownItem options={opciones2} selecttitle={'Seleccione el tipo de cuello'} title={'Cuello'} selectedValue={cuello} onValueChange={setCuello}/>
+                            {/* <DropDownItem options={opciones2} selecttitle={'Seleccione el tipo de cuello'} title={'Cuello'} selectedValue={cuello} onValueChange={setCuello}/> */}
                             <DropDownItem options={opciones2} selecttitle={'Seleccione el tipo de puño'} title={'Puño'} selectedValue={puno} onValueChange={setPuno}/>
                         </div>
                     </div>
