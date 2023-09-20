@@ -32,6 +32,7 @@ function useLogin() {
       localStorage.setItem('token', token);
       setToken(token);
       setSuccess(true);
+      window.location.replace("http://localhost:5173/IngresoPedido");
     } catch (ex) {
       setError(ex.status === 400 ? 'Usuario y/o contraseña incorrectos.' : 'Error de conexión.');
     } finally {

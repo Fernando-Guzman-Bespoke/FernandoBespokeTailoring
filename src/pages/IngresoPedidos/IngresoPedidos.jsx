@@ -105,19 +105,6 @@ function IngresoPedido() {
         }
     }
 
-    // useEffect(() => {
-    //     let uri = `${serverHost}/user/clientList`;
-    //     async function fetchClients() {
-    //         await callFetch({ uri, headers: { 'Content-Type': 'application/json' } });
-    //         console.log(result); // Accede al estado `result` directamente
-    //         if (result && result.result) {
-    //             setClients(result.result); // si tu respuesta del servidor tiene una propiedad `result`
-    //         } else if (result) {
-    //             setClients(result); // si tu respuesta del servidor es un array directamente
-    //         }
-    //     }
-    //     fetchClients();
-    // }, []);
     useEffect(() => {
         let uri = `${serverHost}/user/clientList`;
         async function fetchClients() {

@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test":  "npx cypress run --record --key cb5f283c-758d-44d8-917a-e3b0c4a28d41",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "react": "^18.2.0",
