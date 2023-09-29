@@ -1,0 +1,11 @@
+.Radiotitle{
+    color: black;
+}
+.UserType{
+    color: black;
+}
+.radio-container{
+    justify-content: center;
+    display: flex;
+    gap: 1em;
+}

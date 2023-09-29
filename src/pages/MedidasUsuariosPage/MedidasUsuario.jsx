@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 
 import DropDownItem from '../../components/DropDownItem/DropDownItem';
 import PageTitle from '../../components/PageTitle/PageTitle';
-import Input from '../../components/Input/input';
-import DateInput from '../../components/DateInput/Dateinput';
-import Button from '../../components/button/Button';
 import MeasureValue from '../../components/MeasureValue/MeasureValue';
 import './MedidasUsuario.css'
 function MedidasUsuario (){
