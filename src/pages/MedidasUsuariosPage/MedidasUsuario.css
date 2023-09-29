@@ -1,0 +1,18 @@
+.garmentTitle{
+    color: black;
+    margin-left: 0.5em;
+    font-size: 1.4em;
+    margin-bottom: 0.7em;
+    text-decoration: underline;
+}
+.MeasureContainer{
+    margin-top: -1em;
+}
+.InternMeasurecontainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+.mitad{
+    flex: 1;
+}

@@ -1,0 +1,12 @@
+.ValueContainer{
+    display: flex;
+    margin-left: 0.8em;
+}
+.ValueTitle{
+    color: black;
+    flex: 1;
+}
+.ValueValue{
+    color: black;
+    flex: 1;
+}
