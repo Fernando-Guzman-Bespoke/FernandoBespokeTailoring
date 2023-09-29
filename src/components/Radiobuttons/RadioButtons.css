@@ -8,10 +8,11 @@
     font-size: 1.5em;
 }
 .radioRight{
-    margin-left: 25%;
+    margin-left: 3em;
 }
-
-
 .radio {
     color: white;
+}
+label{
+    font-size: 0.9em;
 }

@@ -9,6 +9,20 @@
     height: 28.7em;
     overflow-y: auto;
     padding-bottom: 2%;
+    scrollbar-width: thin; 
+    scrollbar-color: #a8a8a8 #ffffff; 
+}
+.WhiteContainer::-webkit-scrollbar {
+    width: 8px; 
+}
+  
+.WhiteContainer::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8; 
+    border-radius: 4px; 
+}
+  
+.WhiteContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
 }
 .horizontal{
     display: flex;
@@ -30,7 +44,6 @@
     margin-top: 3%;
 }
 .UnderTitle{
-    /* text-decoration: underline; */
     border-bottom: 2px solid black;
     color: #000000;
     font-size: 1.5em;
@@ -40,7 +53,6 @@
 }
 
 .Subtitle{
-    /* text-decoration: underline; */
     color: #000000;
     font-size: 1.3em;
     margin-top: 0.7em;
@@ -52,24 +64,20 @@
     float: left;
     width: 50%;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  .main-container {
+.main-container {
     display: flex;
     justify-content: space-between;
 }
 
 .checkbox-column, .dropdown-column {
-    width: 32%;  /* Si deseas espacio entre las columnas, reduce este porcentaje */
-    padding: 10px; /* Opcional: añade espacio interior */
+    width: 32%;  
+    padding: 10px; 
 }
 
-.dropdown-column {
-    /* Estilos específicos para la columna de dropdowns, si los necesitas */
-}
