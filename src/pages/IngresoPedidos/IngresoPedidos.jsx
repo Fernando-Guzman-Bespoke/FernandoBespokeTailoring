@@ -18,7 +18,6 @@ function IngresoPedido() {
     const opciones2 =[0,1,2,3,4];
     const [showInput, setShowInput] = useState(false);
     const { callFetch, result, loading } = useFetch();
-    // const navigate = useNavigate();
     const [cliente, setCliente] = useState(0);
     const [clients, setClients] = useState([]);
     const [fechaPedido, setFechaPedido] = useState(new Date());
@@ -138,6 +137,7 @@ function IngresoPedido() {
                     <DateInput title={'Fecha'} value={'Fecha de pedido'}/>
                     <DateInput title={'Fecha de Entrega'}/>
                 </div>
+                
                 <div className='UnderTitle'>2. Telas</div>
                 <div className="row">
                     <div className="column">

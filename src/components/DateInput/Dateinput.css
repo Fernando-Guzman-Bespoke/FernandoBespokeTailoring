@@ -8,4 +8,9 @@
 
 input {
     background-color: white;
+    color-scheme: dark;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }

@@ -1,29 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import SideMenu from '@components/SideMenu';
 import ordersListIcon from '@assets/pedidos.svg';
-// import reportsIcon from '@assets/reportIcon.svg';
-// import noStock from '@assets/noStock.svg';
-// import TestTypeIcon from '@assets/TestTypeIcon.svg';
-// import suppliesListIcon from '@assets/suppliesListIcon.svg';
-// import medicalCentersListIcon from '@assets/medicalCentersListIcon.svg';
 import SideMenuItem from '../SideMenuItem/SideMenuItem';
+import styles from '../SideMenuItem/SideMenuItem.module.css';
+
+
+function DropdownMenuItem({ image, title, children }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <li className={`${styles.sideMenuItem} ${styles.dropdown} ${isOpen ? styles.dropdownOpen : ''}`}>
+      <div onClick={toggleDropdown}>
+        <img src={image} alt="title" className={styles.iconDrop} />
+        <span>{title}</span>
+      </div>
+      <ul className={styles.dropdownContent}>{children}</ul>
+    </li>
+  );
+}
+
 
 function AdminSideMenu({ name, sex }) {
   return (
     <SideMenu name={name} position="Admin" sex={sex}>
-      <SideMenuItem image={ordersListIcon} title="Listado de Pedidos" path="usuarios" />
-       <SideMenuItem image={ordersListIcon} title="Ingreso de Pedidos" path="IngresoPedido" />
-       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Saco" path="MedidasSaco" />
-       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Chaleco" path="MedidasChaleco" />
-       <SideMenuItem image={ordersListIcon} title="Ingreso de Medidas de Pantalón" path="MedidasPantalon" />
+      <SideMenuItem image={ordersListIcon} title="Listado de pedidos" path="usuarios" />
+       <SideMenuItem image={ordersListIcon} title="Ingreso de pedidos" path="IngresoPedido" />
+       <SideMenuItem image={ordersListIcon} title="Crear nuevo cliente" path="NuevoCliente" />
+       <DropdownMenuItem  image={ordersListIcon} title="Ingreso de medidas" path=""> 
+          <SideMenuItem image={ordersListIcon} title="Medidas de saco" path="MedidasSaco" />
+          <SideMenuItem image={ordersListIcon} title="Medidas de chaleco" path="MedidasChaleco" />
+          <SideMenuItem image={ordersListIcon} title="Medidas de pantalón" path="MedidasPantalon" />
+       </DropdownMenuItem>
+       <SideMenuItem image={ordersListIcon} title= "Medidas de usuario" path="MedidasUsuario" />
        <SideMenuItem image={ordersListIcon} title="Facturación" path="Facturacion" />
-       <SideMenuItem image={ordersListIcon} title="Crear Nuevo Cliente" path="NuevoCliente" />
-       <SideMenuItem image={ordersListIcon} title= "Medidas de Usuario" path="MedidasUsuario" />
-      {/*<SideMenuItem image={suppliesListIcon} title="Lista de suministros" path="suministros" />
-      <SideMenuItem image={reportsIcon} title="Reportes" path="reportes" />
-      <SideMenuItem image={noStock} title="Suministros por agotar" path="/suministros/porTerminarse" />
-      <SideMenuItem image={TestTypeIcon} title="Lista de tipos de examen" path="tiposExamen" /> */}
     </SideMenu>
   );
 }
