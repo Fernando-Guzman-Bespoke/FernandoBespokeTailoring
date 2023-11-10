@@ -4,7 +4,10 @@
 }
 .textArea-container{
     width: 100%;
+    background-color: white;
+    border-radius: 20%;
 }
 textarea{
     width: 100%;
+    background-color: white;
 }

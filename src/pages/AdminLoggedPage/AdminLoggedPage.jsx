@@ -8,6 +8,7 @@ import UsersListPage from '@pages/usersListPage';
 import IngresoPedido from '../IngresoPedidos';
 import MedidasSaco from '../IngresoMedidasSaco/MedidasSaco';
 import MedidasChaleco from '../MedidasChaleco/MedidasChalecho';
+import MedidasCamisa from '../MedidasCamisa/MedidasCamisa';
 import MedidasPantalon from '../MedidasPantalon/MedidasPantalon';
 import Facturacion from '../facturacion/facturacion';
 import NuevoCliente from '../NuevoCliente/NuevoCliente';
@@ -18,7 +19,7 @@ function AdminLoggedPage({
   return (
     <>
       {showNavBar && <NavBar />}
-      <div className={styles.page}>
+      <div className={styles.page }>
         <AdminSideMenu name={`${name} ${lastName}`} sex={sex} />
         <Routes>
           <Route path="/usuarios" element={<UsersListPage />} />
@@ -26,6 +27,7 @@ function AdminLoggedPage({
           <Route path="/MedidasSaco" element={<MedidasSaco/>}/>
           <Route path="/MedidasChaleco" element={<MedidasChaleco/>}/>
           <Route path="/MedidasPantalon" element={<MedidasPantalon/>}/>
+          <Route path="/MedidasCamisa" element={<MedidasCamisa/>}/>
           <Route path="/Facturacion" element={<Facturacion/>} />
           <Route path='/NuevoCliente' element={<NuevoCliente/>}/>
           <Route path='/MedidasUsuario' element={<MedidasUsuario/>}/>

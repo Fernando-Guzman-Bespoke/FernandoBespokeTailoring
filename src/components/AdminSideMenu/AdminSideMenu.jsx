@@ -32,6 +32,7 @@ function AdminSideMenu({ name, sex }) {
        <SideMenuItem image={ordersListIcon} title="Ingreso de pedidos" path="IngresoPedido" />
        <SideMenuItem image={ordersListIcon} title="Crear nuevo cliente" path="NuevoCliente" />
        <DropdownMenuItem  image={ordersListIcon} title="Ingreso de medidas" path=""> 
+          <SideMenuItem image={ordersListIcon} title="Medidas de camisa" path="MedidasCamisa" />
           <SideMenuItem image={ordersListIcon} title="Medidas de saco" path="MedidasSaco" />
           <SideMenuItem image={ordersListIcon} title="Medidas de chaleco" path="MedidasChaleco" />
           <SideMenuItem image={ordersListIcon} title="Medidas de pantalón" path="MedidasPantalon" />

@@ -11,7 +11,6 @@ import CheckBox from '../../components/CheckBox/CheckBox';
 import InputTextArea from '../../components/textArea/textArea';
 import useFetch  from '../../hooks/useFetch'
 import { serverHost } from '../../config';
-// import { useNavigate } from 'react-router';
 
 function IngresoPedido() {
     const opciones =['Opcion1','Opcion2','Opcion3','Opcion4'];
@@ -53,7 +52,6 @@ function IngresoPedido() {
     const [coderas, setCoderas] = useState(false);
     const [mancuernaDoble, setMancuernaDoble] = useState(false);
     const [error, setError] = useState(null);
-
 
     const handleSave = async () => {
         const payload = {
@@ -104,19 +102,43 @@ function IngresoPedido() {
         }
     }
 
+    // useEffect(() => {
+    //     let uri = `${serverHost}/user/clientList`;
+    //     console.log(serverHost)
+    //     console.log(loading)
+    //     callFetch({ uri, headers: { 'Content-Type': 'application/json' }, method: 'GET' });
+    //     console.log(result);
+    //     if (result && result.result) {
+    //         setClients(result.result); 
+    //     } else if (result) {
+    //         setClients(result);  
+    //     }
+    // }, []);
+
     useEffect(() => {
-        let uri = `${serverHost}/user/clientList`;
-        async function fetchClients() {
-            await callFetch({ uri, headers: { 'Content-Type': 'application/json' } });
-        }
+        const fetchClients = async () => {
+            try {
+                await callFetch({
+                    uri: `${serverHost}/user/clientList`,
+                    headers: { 'Content-Type': 'application/json' },
+                    method: 'GET'
+                });
+            } catch (error) {
+                console.error('Error fetching clients:', error);
+            }
+        };
+    
         fetchClients();
-        console.log(result);
+    }, []);
+    
+    useEffect(() => {
         if (result && result.result) {
             setClients(result.result); 
         } else if (result) {
-            setClients(result); 
+            setClients(result);  
         }
-    }, []);
+    }, [result]); 
+    
     
     
     const transformedClients = clients
@@ -126,7 +148,12 @@ function IngresoPedido() {
     value: client.id_cliente
   }));
 
-    return(
+  if (loading) {
+    return (
+        <p>loading...</p>
+    );
+  }
+    return( 
         <>  
         <div>
             <PageTitle title={'Ingreso de Pedido'}/>
@@ -163,42 +190,6 @@ function IngresoPedido() {
                             />
                             {showInput && <Input value={'Ingrese las iniciales'} title={'Iniciales'}/>}
                             {/* <Input value={'Ingrese las iniciales'} title={'Iniciales'}/> */}
-                        </div>
-                    </div>
-                </div>
-                {/* <div className='horizontal-top'>
-                    <DropDownItem options={opciones} selecttitle={'Seleccione la entretela'} title={'Entrtela'}/>
-                </div> */}
-                <div className='UnderTitle'>Estilo</div>
-                <div className="main-container">
-                    <div className="checkbox-column">
-                        <CheckBox title={'Botón en el Cuello'} isChecked={botonCuello} onCheckedChange={setBotonCuello}/>
-                        <CheckBox title={'Botón lateral'} isChecked={botonLateral} onCheckedChange={setBotonLateral}/>
-                        <CheckBox title={'Mancuerna doble'} isChecked={mancuernaDoble} onCheckedChange={setMancuernaDoble}/>
-                        <CheckBox title={'Bolsa'} isChecked={bolsa} onCheckedChange={setBolsa}/>
-                        <CheckBox title={'Costura p/Pluma'} isChecked={costura} onCheckedChange={setCostura}/>
-                        <CheckBox title={'Combinación'} isChecked={combinación} onCheckedChange={setCombinación}/>
-                        {/* <CheckBox title={'Iniciales'} isChecked={iniciales} onCheckedChange={setIniciales}/> */}
-                        <CheckBox title={'Plaquet'} isChecked={plaquet} onCheckedChange={setPlaquet}/>
-                        <CheckBox title={'Cuello'} isChecked={cuello} onCheckedChange={setCuello} />
-                        <CheckBox title={'Collar interno'} isChecked={collarInterno} onCheckedChange={setCollarInterno}/>
-                        <CheckBox title={'Collar externo'} isChecked={collarExterno} onCheckedChange={setCollarExterno}/>
-                    </div>
-                    <div className="checkbox-column">
-                        <CheckBox title={'Botonera'} isChecked={botonera} onCheckedChange={setBotonera}/>
-                        <CheckBox title={'Bies de Botonera'} isChecked={biesBotonera} onCheckedChange={setBiesBotonera}/>
-                        <CheckBox title={'Orilla de plaquet'} isChecked={orillaPlaquet} onCheckedChange={setOrillaPlaquet}/>
-                        <CheckBox title={'Puño interno'} isChecked={punoInterno} onCheckedChange={setPunoInterno}/>
-                        <CheckBox title={'Puño externo'} isChecked={punoExterno} onCheckedChange={setPunoExterno}/>
-                        <CheckBox title={'Flecha'} isChecked={flecha} onCheckedChange={setFlecha}/>
-                        <CheckBox title={'Botonera flecha'} isChecked={botoneraFlecha} onCheckedChange={setBotoneraFlecha}/>
-                        <CheckBox title={'Trabita de Manga'} isChecked={trabitaManga} onCheckedChange={setTrabitaManga}/>
-                        <CheckBox title={'Coderas'} isChecked={coderas} onCheckedChange={setCoderas}/>
-                    </div>
-                    <div className="dropdown-column">
-                        <div>
-                            {/* <DropDownItem options={opciones2} selecttitle={'Seleccione el tipo de cuello'} title={'Cuello'} selectedValue={cuello} onValueChange={setCuello}/> */}
-                            <DropDownItem options={opciones2} selecttitle={'Seleccione el tipo de puño'} title={'Puño'} selectedValue={puno} onValueChange={setPuno}/>
                         </div>
                     </div>
                 </div>
