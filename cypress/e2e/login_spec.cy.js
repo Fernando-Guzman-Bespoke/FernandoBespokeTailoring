@@ -2,7 +2,7 @@ describe('Pruebas para la página de Login', () => {
 
     // Antes de cada prueba, visitar la página de inicio de sesión.
     beforeEach(() => {
-      cy.visit('http://localhost:5173/'); // Reemplaza con la ruta correcta si es diferente
+      cy.visit('https://fernandobespoke.web.app/'); // Reemplaza con la ruta correcta si es diferente
     });
   
     it('debería mostrar errores cuando los campos están vacíos', () => {

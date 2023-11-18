@@ -2,7 +2,7 @@ describe('Ingreso al sistema y prueba de pedidos', () => {
 
    beforeEach(() => {
        // Visita la página de inicio de sesión. Ajusta la URL como sea necesario.
-       cy.visit('http://localhost:5173/user/login');
+       cy.visit('https://fernandobespoke.web.app/user/login');
    });
 
 
