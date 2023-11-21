@@ -102,19 +102,6 @@ function IngresoPedido() {
         }
     }
 
-    // useEffect(() => {
-    //     let uri = `${serverHost}/user/clientList`;
-    //     console.log(serverHost)
-    //     console.log(loading)
-    //     callFetch({ uri, headers: { 'Content-Type': 'application/json' }, method: 'GET' });
-    //     console.log(result);
-    //     if (result && result.result) {
-    //         setClients(result.result); 
-    //     } else if (result) {
-    //         setClients(result);  
-    //     }
-    // }, []);
-
     useEffect(() => {
         const fetchClients = async () => {
             try {

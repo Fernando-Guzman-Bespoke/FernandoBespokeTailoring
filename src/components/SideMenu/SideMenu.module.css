@@ -85,7 +85,6 @@ ul.itemsList{
   align-items: center;
   color:gray;
   align-self: flex-end;
-  margin-top: 20px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -95,9 +94,7 @@ ul.itemsList{
 
 .logout img{
   height: 80%;
-
 }
-
 
 .logout:hover{
   font-weight: bold;

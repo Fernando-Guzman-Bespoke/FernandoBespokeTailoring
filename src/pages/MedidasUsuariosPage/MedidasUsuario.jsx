@@ -12,7 +12,7 @@ function MedidasUsuario (){
             <PageTitle title={'Medidas de Usuario'}/>
             <div className='WhiteContainer'>   
                 <div className='horizontal2'>
-                    <DropDownItem options={clientes} selecttitle={'Seleccione el nombre del cliente'} title={'Cliente'}/>
+                    <DropDownItem options={clientes} selecttitle={'Seleccione el cliente'} title={'Cliente'}/>
                 </div>
                 <div className='MeasureContainer'>          
                     <div className='garmentTitle'>Medidas Saco</div>

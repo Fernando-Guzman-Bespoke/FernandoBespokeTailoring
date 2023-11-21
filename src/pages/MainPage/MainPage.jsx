@@ -8,7 +8,7 @@ function MainPage() {
 
   let page;
   // if (token === null) page = <Login />;
-  if (token === null) page = <Login />;
+  if (token === null) page = <LoggedPage />;
   // else if (token) console.log('inicio sesion')
   else if (token) page = <LoggedPage token={token} />;
   return (
