@@ -10,7 +10,7 @@ function NuevoCliente(){
     return(
         <>
         <div>
-            <PageTitle title={'Creación Nuevo Cliente'}/>
+            <PageTitle title={'Crear Nuevo Cliente'}/>
             <div className='WhiteContainer'>   
             <br/><br/>
                 <div className='horizontal'>
