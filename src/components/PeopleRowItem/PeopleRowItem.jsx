@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import maleAvatar from '@assets/maleUserAvatar.svg';
-import femaleAvatar from '@assets/femaleUserAvatar.svg';
-import styles from './PeopleRowItem.module.css';
+// import maleAvatar from '@assets/maleUserAvatar.svg';
+// import femaleAvatar from '@assets/femaleUserAvatar.svg';
+// import styles from './PeopleRowItem.module.css';
 
 function PeopleRowItem({ name, sex }) {
   return (
